@@ -1,0 +1,160 @@
+<form action="" method="post">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gmail Sender!</title>
+  <style>
+    #container {
+      position: relative;
+      width: 1280px;
+    }
+    #color-spot1 {
+      position: absolute;
+      width: 100%;
+      height: 25px;
+      background-image: url('https://drive.google.com/uc?export=view&id=1DV8Hluig57Ii9tRIhCOhsoRxhXwt8cIP');
+      z-index: 1;
+    }
+    #color-spot2 {
+      position: absolute;
+      width: 100%;
+      height: 66px;
+      background-image: url('https://drive.google.com/uc?export=view&id=1mMeiYm0S2es5NFwb-yfKdAvYmGFD1GBX');
+      top: 15px;
+      left: -8px;
+      z-index: 1;
+    }
+    #color-spot3 {
+      position: absolute;
+      width: 40px;
+      height: 30px;
+      background-image: url('https://drive.google.com/uc?export=view&id=15amT5_g1FU3Tr0fQu48wAA63YVGZMuzn');
+      top: 31px;
+      left: 0px;
+      z-index: 1;
+    }
+    #color-spot4 {
+      position: absolute;
+      width: 1280px;
+      height: 463px;
+      background-image: url('https://drive.google.com/uc?export=view&id=1qgRR9bAmiy7Xa53TQA0BDR-MyeeSX3AA');
+      top: 81px;
+      left: -8px;
+      z-index: 1;
+    }
+    .Text {
+      position: absolute;
+      top: 0px;
+      left: 50px;
+      color: white;
+      font-size: 30px;
+      font-family: sans-serif;
+      z-index: 2;
+    }
+    .textbox {
+      position: absolute;
+      top: 120px;
+      left: 500px;
+      width: 300px;
+      height: 15px;
+      z-index: 2;
+    }
+    .Text2 {
+      position: absolute;
+      top: 70px;
+      left: 500px;
+      color: yellowgreen;
+      font-size: 20px;
+      font-family: fantasy;
+      z-index: 2;
+    }
+    .textbox2 {
+      position: absolute;
+      top: 200px;
+      left: 471px;
+      width: 360px;
+      height: 50px;
+      z-index: 2;
+    }
+    .Text3 {
+      position: absolute;
+      top: 150px;
+      left: 471px;
+      color: yellow;
+      font-size: 20px;
+      font-family: fantasy;
+      z-index: 2;
+    }
+    .Text4 {
+      position: absolute;
+      top: 260px;
+      left: 441px;
+      color: blue;
+      font-size: 25px;
+      font-family: fantasy;
+      z-index: 2;
+    }
+    .textbox3 {
+      position: absolute;
+      top: 320px;
+      left: 441px;
+      width: 428px;
+      height: 120px;
+      z-index: 2;
+    }
+    #myButton {
+      position: absolute;
+      width: 100px;
+      height: 40px;
+      top: 100px;
+      left: 100px;
+      z-index: 2;
+      font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+  <form action="main.py" method="post">
+    <div id="container">
+      <div id="color-spot1"></div>
+      <div id="color-spot2"></div>
+      <div id="color-spot3"></div>
+      <div id="color-spot4"></div>
+      <p class="Text">Gmail Sender!</p>
+      <p class="Text2">Which Gmail Do You Want To Send To?</p>
+      <p class="Text3">What would you like the subject to be about?</p>
+      <p class="Text4">What would you want your message to be?</p>
+      <textarea id="myTextBox" class="textbox" name="to"></textarea>
+      <textarea id="myTextBox2" class="textbox2" name="subject"></textarea>
+      <textarea id="myTextBox3" class="textbox3" name="message"></textarea>
+    </div>
+    <button id="myButton" class="Button1" type="submit">Send!</button>
+  </form>
+  <script>
+    var colorSpot1 = document.getElementById('color-spot1');
+    function changePosition1(x, y) {
+      colorSpot1.style.left = x + 'px';
+      colorSpot1.style.top = y + 'px';
+    }
+    changePosition1(-8, -10);
+  </script>
+  <script>
+    var button = document.getElementById("myButton");
+    function setButtonStyle(width, height, x, y) {
+      button.style.width = width + "px";
+      button.style.height = height + "px";
+      button.style.left = x + "px";
+      button.style.top = y + "px";
+    }
+    setButtonStyle(400, 60, 465, 475);
+  </script>
+  <style>
+    .Button1 {
+      background-color: greenyellow;
+      color: white;
+      font-size: 20px;
+    }
+  </style>
+</body>
+</html>
+</form>
